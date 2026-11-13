@@ -8,14 +8,13 @@ window.SITE = {
   tagline: "Tours & Travels",
 
   // WhatsApp number: country code + number, digits only (no +, no spaces).
-  // PLACEHOLDER — replace with the real business WhatsApp number.
-  whatsapp: "910000000000",
+  whatsapp: "919730592488",
 
-  phone: "+91 00000 00000",       // shown on site
-  phoneLink: "+910000000000",     // used in tel: links
-  email: "hello@indoreyatra.in",
-  address: "12, Vijay Nagar, Indore, Madhya Pradesh 452010",
-  mapQuery: "Vijay Nagar, Indore",
+  phone: "+91 97305 92488",       // shown on site
+  phoneLink: "+919730592488",     // used in tel: links
+  email: "hello.indoreyatra@gmail.com",
+  address: "242, New Gouri Nagar, Sukhliya, Indore",
+  mapQuery: "New Gouri Nagar, Sukhliya, Indore",
   hours: "Mon – Sun · 8:00 AM – 9:00 PM",
 
   social: {
