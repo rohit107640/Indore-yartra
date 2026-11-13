@@ -1,0 +1,17 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Firebase CLI
+.firebase/
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+
+# Node (if you add build tools later)
+node_modules/
+
+# Local tool settings
+.claude/
