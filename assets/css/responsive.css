@@ -244,3 +244,12 @@ body:not([data-header="overlay"]) .header__inner { color: var(--dark); backgroun
   .nav__link { padding: 8px 8px; }
   .header__inner { gap: 10px; }
 }
+
+/* Mobile: home-page lists show the first 4 items + a "View all" button */
+.m-more { display: none; }
+@media (max-width: 600px) {
+  .m-limit > :nth-child(n+5) { display: none !important; }
+  .m-more { display: flex; justify-content: center; margin-top: 20px; }
+  .m-more .btn { width: 100%; justify-content: center; }
+  .section-head .hide-m { display: none; }
+}
