@@ -273,3 +273,8 @@ body:not([data-header="overlay"]) .header__inner { color: var(--dark); backgroun
   .hero--home .hero__dots button.is-active { width: 24px; }
   .hero--home { padding-top: calc(var(--header-h) + 96px); }
 }
+
+/* Book-a-ride mode tabs: fully rounded track and active pill */
+.hb__tabs { border-radius: 999px; padding: 5px; }
+.hb__tab { border-radius: 999px; }
+.hb__pill { border-radius: 999px; }
