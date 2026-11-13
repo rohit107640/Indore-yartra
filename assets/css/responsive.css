@@ -261,3 +261,15 @@ body:not([data-header="overlay"]) .header__inner { color: var(--dark); backgroun
   .tabs::-webkit-scrollbar { display: none; }
   .tab { flex: 0 0 auto; white-space: nowrap; padding: 8px 14px; font-size: .84rem; }
 }
+
+/* Mobile hero: put the slide caption + progress dots in the free space under the
+   header instead of the bottom corners, where they collide with the booking card */
+@media (max-width: 768px) {
+  .hero--home .hero__place { top: calc(var(--header-h) + 14px); bottom: auto; left: var(--gutter); max-width: calc(100% - 2 * var(--gutter)); padding: 6px 14px 6px 6px; gap: 10px; }
+  .hero--home .hero__place strong { font-size: .88rem; }
+  .hero--home .hero__place small { font-size: .72rem; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 52vw; }
+  .hero--home .hero__dots { top: calc(var(--header-h) + 76px); bottom: auto; left: var(--gutter); right: auto; gap: 4px; }
+  .hero--home .hero__dots button { width: 14px; height: 3px; }
+  .hero--home .hero__dots button.is-active { width: 24px; }
+  .hero--home { padding-top: calc(var(--header-h) + 96px); }
+}
