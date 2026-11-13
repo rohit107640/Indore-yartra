@@ -469,3 +469,12 @@
     el.innerHTML = `<iframe title="Office location on map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=${encodeURIComponent(S.mapQuery)}&output=embed"></iframe>`;
   });
 })();
+
+/* Keep the tapped tab visible when a tab bar scrolls sideways (mobile) */
+document.addEventListener("click", (e) => {
+  const tab = e.target.closest(".tabs .tab");
+  if (!tab) return;
+  const bar = tab.parentElement;
+  if (bar.scrollWidth <= bar.clientWidth) return;
+  bar.scrollTo({ left: tab.offsetLeft - (bar.clientWidth - tab.offsetWidth) / 2, behavior: "smooth" });
+});

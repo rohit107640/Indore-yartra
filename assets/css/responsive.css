@@ -253,3 +253,11 @@ body:not([data-header="overlay"]) .header__inner { color: var(--dark); backgroun
   .m-more .btn { width: 100%; justify-content: center; }
   .section-head .hide-m { display: none; }
 }
+
+/* Mobile: pill tab bars stay on one row and scroll sideways */
+@media (max-width: 768px) {
+  .tabs-wrap { margin-bottom: 28px; justify-content: flex-start; }
+  .tabs { flex-wrap: nowrap; justify-content: flex-start; max-width: 100%; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: none; overscroll-behavior-x: contain; border-radius: 999px; padding: 4px; gap: 2px; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { flex: 0 0 auto; white-space: nowrap; padding: 8px 14px; font-size: .84rem; }
+}
